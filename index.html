@@ -12,33 +12,38 @@
 </head>
 
 <body>
-  <header id="header"> <!-- keep at top -->
+  <header id="header"> <!-- keep at top --> 
     <div class="brand">
-      <h1 class="brand">Colours!</h1>
-      <img id="header-img" src="assets/Colours-frangipani-logo.png">
+      <h1>Colours!<img id="header-img" src="assets/Colours-frangipani-logo.png"></h1>
     </div>
-    <nav class="nav">
-      <ul class="nav-links">
-          <li class="nav-link"><a href="#video">About</a></li>
-          <li class="nav-link"><a href="#evo-colours">Evo Hues</a></li>
-          <li class="nav-link"><a href="#form">Subscribe</a></li>
-      </ul>
+    <nav id="nav-bar">
+      <a class="nav-link navlink1" href="#video">About</a>
+      <a class="nav-link navlink2" href="#evo-colours">Evo Hues</a>
+      <a class="nav-link navlink3" href="#form">Subscribe</a>
     </nav>
   </header>
   <main>
-    <div id="video">
-      <video src="    ">
-        
-      </video>
-    </div>
-    <div id="evo-colours">
-      
-    </div>
-    <div id="form">
-      <input id="name" type="text" name="name" placeholder="Your name">
-      <input id="email" type="email" name="email" placeholder="Your email">
-      <input id="submit" type="submit" name="submit" value="Subscribe"> <!-- submit to static page (use this mock URL: https://www.freecodecamp.com/email-submit) that confirms the email address was entered and that it posted successfully. -->
-    </div>
+    <section>
+        <iframe id="video" width="80%" height="auto" src="https://www.youtube.com/embed/fCc1ab0cmuo" frameborder="0"></iframe>
+    </section>
+    <section id="evo-colours">
+      <img class="gel1" src="assets/Evo_Whitney.png">
+      <img class="gel2" src="assets/Evo_Angela.png">
+      <img class="gel3" src="assets/Evo_Anastasia.png">
+      <img class="gel4" src="assets/Evo_Olivia.png">
+      <img class="gel5" src="assets/Evo_Roxanne.png">
+      <img class="gel6" src="assets/Evo_Scarlett.png">
+      <img class="gel7" src="assets/Evo_Cherie-ch.png">
+      <img class="gel8" src="assets/Evo_Gusti-ch.png">
+      <img class="gel9" src="assets/Evo_Kimberley-ch.png">
+    </section>
+    <section>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input id="name" type="text" name="name" placeholder="Your name">
+        <input id="email" type="email" name="email" placeholder="Your email">
+        <input id="submit" type="submit" name="submit" value="Subscribe"> <!-- submit to static page (use this mock URL: https://www.freecodecamp.com/email-submit) that confirms the email address was entered and that it posted successfully. -->
+      </form>
+    </section>
   </main>
   <footer>
     <div class="footer-section"><img class="footer-img" src="assets/EVO-Logo-HR.png" alt="Bio Sculpture Evo logo"></div><div class="footer-section"><img class="footer-img" src="assets/BioBadgesM.png" alt="no animal testing, vegan, non-toxic, 5-star safety rated"></div><div class="footer-section"><p>&copy; DawnM 2018</p></div>
