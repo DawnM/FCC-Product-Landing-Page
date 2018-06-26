@@ -1,67 +1,75 @@
-body {
- font-family: Dosis;
- font-size: 16px;
- font-weight: 400;
+/* use media queries & flexbox! */
+:root {
+    --bio-gold: #867b68;
+    --dark-brown: #5a5346;
+    --pale-pink: #f9f5fa;
+    --mid-pink: #ede3f0;
+    --pale-grey: #f1f2f2; 
 }
 
-#main {
- width: 80%;
- padding: 20px;
- margin-left: auto;
- margin-right: auto;
- background-color: #F2FAFF;
- border-radius: 3px;
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+body {
+  font-family: Cabin;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--dark-brown);
+  margin: 0 auto 0 auto;
+  width: 75%;
 }
 
 header {
- background-color: #F2FAFF;
- border-radius: 5px;
+  width: 75%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: red;
 }
 
-h1, h2 {
- color: #3DB5FF;
- text-align: center;
+.brand {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: blue;
 }
 
-#img-div {
- background-color: #AFE0FF;
- border-radius: 2px;
- padding: 20px;
+h1 {
+  font-family: "Kaushan Script";
+  color: var(--bio-gold);
+  position: relative;
+  padding-left: 3em;
 }
 
-#image {
- display: block;
- border-radius: 7px;
- max-width: 80%;
- height: auto;
- margin-left: auto;
- margin-right: auto;
+#header-img {
+  max-height: 4em;
+  width: auto;
 }
 
-#img-caption {
- text-align: center;
+.nav {
+  display: flex;
+  background-color: green;
 }
 
-#tribute-info {
- padding: 20px; 
-}
-
-p {
- font-size: 1.2em;
- text-align: left;
-}
-
-ul {
- text-align: left;
- font-size: 1.1em;
+.nav-links {
+  padding-right: 3em;
 }
 
 footer {
- background-color: #AFE0FF;
- padding: 10px;
- border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-footer p {
- text-align: center;
+.footer-img {
+  max-height: 4em;
+  width: auto;  
+}
+
+.footer-section {
+  flex: 0 1 auto;
 }

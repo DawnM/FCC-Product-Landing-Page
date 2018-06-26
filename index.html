@@ -5,43 +5,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>FCC: Tribute Page</title>
-  <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
+  <title>FCC: Product Landing Page</title>
+  <link href="https://fonts.googleapis.com/css?family=Cabin|Kaushan+Script" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
 </head>
 
 <body>
-  <main id="main">
-    <header>
-      <h1 id="title">Heads Together</h1>
-      <h2><em>Changing the conversation on Mental Health</em></h2>
-    </header>
-    <div id="img-div">
-      <img id="image" src="https://www.headstogether.org.uk/wp-content/uploads/2016/12/le-pic.png" alt="The Duke and Duchess of Cambridge and Prince Harry on the London Eye"></img>
-      <figcaption id="img-caption">On World Mental Health Day, Heads Together celebrated the support with a special event at County Hall and The London Eye.</figcaption>
+  <header id="header"> <!-- keep at top -->
+    <div class="brand">
+      <h1 class="brand">Colours!</h1>
+      <img id="header-img" src="assets/Colours-frangipani-logo.png">
     </div>
-    <div id="tribute-info">
-      <p>Heads Together is tackling stigma by getting people talking about mental health, working with our Charity Partners and Founding Partners, as well as a range of organisations and groups that have committed to support the campaign.</p>
-      <p>On 16th May, The Duke and Duchess of Cambridge and Prince Harry launched their new campaign to end stigma around mental health. The Heads Together campaign will see them working in partnership with inspiring charities to change the national conversation on mental wellbeing.</p>
-      <p>Their Royal Highnesses are keen to build on the great work that is already taking place across the country, to ensure that people feel comfortable with their everyday mental wellbeing, feel able to support their friends and families through difficult times, and that stigma no longer prevents people getting the help they need.</p>
-      <p>The campaign launch at Queen Elizabeth Olympic Park in east London showcased the innovative work of the Heads Together charity partners who have achieved so much in tackling stigma, raising awareness, and providing vital help for people with mental health challenges. The team covers a wide range of mental health issues that are close to The Duke and Duchess and Prince Harry’s passions. They are:</p>
-      <ul>
-        <li>Anna Freud Centre</li>
-        <li>Best Beginnings</li>
-        <li>CALM – The Campaign Against Living Miserably</li>
-        <li>Contact (a military mental health coalition)</li>
-        <li>Mind</li>
-        <li>Place2Be</li>
-        <li>The Mix</li>
-        <li>YoungMinds</li>
+    <nav class="nav">
+      <ul class="nav-links">
+          <li class="nav-link"><a href="#video">About</a></li>
+          <li class="nav-link"><a href="#evo-colours">Evo Hues</a></li>
+          <li class="nav-link"><a href="#form">Subscribe</a></li>
       </ul>
-      <footer>
-        <p>Please take the time to learn more about <a id="tribute-link" target="_blank" href="https://www.headstogether.org.uk/changing-the-conversation/"><strong>Changing the Conversation</strong></a> on the Heads Together website.</p>
-      </footer>
+    </nav>
+  </header>
+  <main>
+    <div id="video">
+      <video src="    ">
+        
+      </video>
+    </div>
+    <div id="evo-colours">
+      
+    </div>
+    <div id="form">
+      <input id="name" type="text" name="name" placeholder="Your name">
+      <input id="email" type="email" name="email" placeholder="Your email">
+      <input id="submit" type="submit" name="submit" value="Subscribe"> <!-- submit to static page (use this mock URL: https://www.freecodecamp.com/email-submit) that confirms the email address was entered and that it posted successfully. -->
     </div>
   </main>
-  
-  <script  src="js/index.js"></script>
+  <footer>
+    <div class="footer-section"><img class="footer-img" src="assets/EVO-Logo-HR.png" alt="Bio Sculpture Evo logo"></div><div class="footer-section"><img class="footer-img" src="assets/BioBadgesM.png" alt="no animal testing, vegan, non-toxic, 5-star safety rated"></div><div class="footer-section"><p>&copy; DawnM 2018</p></div>
+  </footer>
 </body>
 </html>
