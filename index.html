@@ -6,38 +6,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>FCC: Product Landing Page</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link href="https://fonts.googleapis.com/css?family=Cabin|Kaushan+Script" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </head>
 
 <body>
   <header id="header"> <!-- keep at top --> 
-    <div class="brand">
-      <h1>Colours!<img id="header-img" src="assets/Colours-frangipani-logo.png"></h1>
-    </div>
-    <nav id="nav-bar">
-      <a class="nav-link navlink1" href="#video">About</a>
-      <a class="nav-link navlink2" href="#evo-colours">Evo Hues</a>
-      <a class="nav-link navlink3" href="#form">Subscribe</a>
+    <nav>
+      <div class="nav-block brand">
+        <img id="header-img" src="assets/Colours-frangipani-logo.png">
+        <h1>Colours!</h1>
+      </div>
+      <div class="nav-block navs">
+        <ul id="nav-bar">
+          <li><a class="nav-link navlink1" href="#video">About</a></li>
+          <li><a class="nav-link navlink2" href="#evo-colours">Evo Hues</a></li>
+          <li><a class="nav-link navlink3" href="#form">Subscribe</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
   <main>
     <section>
-        <iframe id="video" width="80%" height="auto" src="https://www.youtube.com/embed/fCc1ab0cmuo" frameborder="0"></iframe>
+        <iframe id="video" src="https://www.youtube.com/embed/fCc1ab0cmuo" frameborder="0"></iframe>
     </section>
     <section id="evo-colours">
-      <img class="gel1" src="assets/Evo_Whitney.png">
-      <img class="gel2" src="assets/Evo_Angela.png">
-      <img class="gel3" src="assets/Evo_Anastasia.png">
-      <img class="gel4" src="assets/Evo_Olivia.png">
-      <img class="gel5" src="assets/Evo_Roxanne.png">
-      <img class="gel6" src="assets/Evo_Scarlett.png">
-      <img class="gel7" src="assets/Evo_Cherie-ch.png">
-      <img class="gel8" src="assets/Evo_Gusti-ch.png">
-      <img class="gel9" src="assets/Evo_Kimberley-ch.png">
+      <img class="gel" src="assets/Evo_Whitney.png">
+      <img class="gel" src="assets/Evo_Angela.png">
+      <img class="gel" src="assets/Evo_Anastasia.png">
+      <img class="gel" src="assets/Evo_Olivia.png">
+      <img class="gel" src="assets/Evo_Roxanne.png">
+      <img class="gel" src="assets/Evo_Scarlett.png">
+      <img class="gel" src="assets/Evo_Cherie-ch.png">
+      <img class="gel" src="assets/Evo_Gusti-ch.png">
+      <img class="gel" src="assets/Evo_Kimberley-ch.png">
     </section>
     <section>
+      <p>Sign up to recieve news about more colours as we add them to our range!</p>
       <form id="form" action="https://www.freecodecamp.com/email-submit">
         <input id="name" type="text" name="name" placeholder="Your name">
         <input id="email" type="email" name="email" placeholder="Your email">
@@ -46,7 +53,15 @@
     </section>
   </main>
   <footer>
-    <div class="footer-section"><img class="footer-img" src="assets/EVO-Logo-HR.png" alt="Bio Sculpture Evo logo"></div><div class="footer-section"><img class="footer-img" src="assets/BioBadgesM.png" alt="no animal testing, vegan, non-toxic, 5-star safety rated"></div><div class="footer-section"><p>&copy; DawnM 2018</p></div>
+    <div class="footer-section">
+      <img class="footer-img" src="assets/EVO-Logo-HR.png" alt="Bio Sculpture Evo logo">
+    </div>
+    <div class="footer-section">
+      <img class="footer-img" src="assets/BioBadgesM.png" alt="no animal testing, vegan, non-toxic, 5-star safety rated">
+    </div>
+    <div class="footer-section">
+      <p>&copy; DawnM 2018</p>
+    </div>
   </footer>
 </body>
 </html>

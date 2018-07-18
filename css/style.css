@@ -1,146 +1,170 @@
-/* use media queries! */
-:root {
-    --bio-gold: #867b68;
-    --dark-brown: #5a5346;
-    --pale-pink: #f9f5fa;
-    --mid-pink: #ede3f0;
-    --pale-grey: #f1f2f2; 
+/* --- General Styles --- */
+  :root {
+      --bio-gold: #867b68;
+      --dark-brown: #5a5346;
+      --pale-pink: #f9f5fa;
+      --mid-pink: #ede3f0;
+      --pale-grey: #f1f2f2; 
+  }
+
+  a {
+    text-decoration: none;
+    color: unset;
+  }
+
+  body {
+    min-height: 100vh;
+    font-family: Cabin;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--dark-brown);
+    margin: 0 auto 2em auto;
+    background: linear-gradient(180deg, var(--mid-pink), var(--pale-grey));
+  }
+
+  a:-webkit-any-link {
+    cursor: pointer;
 }
 
-a {
-  text-decoration: none;
-  color: unset;
-}
-
-body {
-  font-family: Cabin;
-  font-size: 16px;
-  font-weight: 400;
-  color: var(--dark-brown);
-  margin: 0 auto 2em auto;
-  width: 75%;
-  background: linear-gradient(180deg, var(--mid-pink), var(--pale-grey));
-}
-
-header {
-  width: 75%;
-  position: fixed;
-  top: 0;
-  background-color: var(--mid-pink);
-  display: grid;
-  grid-template-areas: 
-    "brand navbar"
-}
-
-.brand {grid-area: "brand";}
-
-h1 {
-  font-family: "Kaushan Script";
-  color: var(--bio-gold);
-  position: relative;
-  padding-left: 3em;
-}
-
-#header-img {
-  max-height: 1.5em;
-  width: auto;
-}
-
-nav {
-  width: 40%;
-/*  display: flex;
-  justify-content: space-around; */
-  align-items: center;
-  grid-area: "navbar";
-  display: grid;
-  grid-template-areas: 
-     "navlink1 navlink2 navlink3"
-}
-
-.navlink1 {grid-area: "navlink1"};
-.navlink2 {grid-area: "navlink2"};
-.navlink3 {grid-area: "navlink3"};
-
-main {
-  margin: 7em auto 0 auto;
-  text-align: center;
-}
-
-section {
-  margin: 1.2em;
-}
-
-#evo-colours {
-  display: grid;
-  justify-content: space-around;
-  grid-row-gap: 1em;
-  grid-template-areas: 
-    "gel1 gel2 gel3"
-    "gel4 gel5 gel6"
-    "gel7 gel8 gel9"
-}
-
-.gel1 {grid-area: "gel1";}
-.gel2 {grid-area: "gel2";}
-.gel3 {grid-area: "gel3";}
-.gel4 {grid-area: "gel4";}
-.gel5 {grid-area: "gel5";}
-.gel6 {grid-area: "gel6";}
-.gel7 {grid-area: "gel7";}
-.gel8 {grid-area: "gel8";}
-.gel9 {grid-area: "gel9";}
-
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.footer-img {
-  max-height: 4em;
-  width: auto;  
-}
-
-.footer-section {
-  
-}
-
-
-/* MEDIA QUERIES */
-
-/* Smartphones (portrait and landscape) ----------- */
-@media (min-width : 320px) and (max-width : 480px) {
+/* --- Header Styles ---*/
   header {
-    display: grid;
-    grid-template-areas: 
-      "brand"
-      "navbar"
+    border: 1px solid silver;
+    width: 100%;
+    background-color: var(--mid-pink);
+    position: fixed;
+    top: 0;
+  }
+
+  nav {
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-block {
+    display: inline-block;
+    margin: 0;
+  }
+
+  .brand {
+    width: 35%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  h1 {
+    font-family: "Kaushan Script";
+    color: var(--bio-gold);
+    font-size: 2em;
+    margin: 0;
+    position: fixed;
+    left: 14%;
+  }
+
+  #header-img {
+    max-height: 5em;
+    width: auto;
+    padding: 10px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 40%;
+    align-items: center;
+    display: flex;
+  }
+
+  li {
+    flex-shrink: 0;
+  }
+
+  header h1, header a {
+    padding: 10px 15px;
+    text-align: center;
+    display: inline-block;
+  }
+
+  main {
+    width: 75%;
+  }
+
+/* --- Main Content Styles --- */
+  main {
+    margin: 10% auto 0 auto;
+    text-align: center;
+  }
+
+  section {
+    margin: 1.2em;
+  }
+
+  iframe {
+    width: 854px;
+    height: 480px;
+    text-align: center;
   }
 
   #evo-colours {
-    display: grid;
-    grid-template-areas: 
-      "gel1"
-      "gel2"
-      "gel3"
-      "gel4"
-      "gel5"
-      "gel6"
-      "gel7"
-      "gel8"
-      "gel9"
-  }
-}
 
-/* Tablets (portrait and landscape) ----------- */
-@media (min-width : 480px) and (max-width : 1024px) {
-  #evo-colours {
-    display: grid;
-    grid-template-areas: 
-      "gel1 gel2"
-      "gel3 gel4"
-      "gel5 gel6"
-      "gel7 gel8"
-      "gel9 gel9"
   }
-}
+
+  .gel {
+    padding: 1%;
+  }
+
+/* --- Footer Styles --- */
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .footer-img {
+    max-height: 4em;
+    width: auto;  
+  }
+
+  .footer-section {
+    padding: 0.3em;
+  }
+
+/* Media Queries */
+  @media (max-width: 769px) {
+    #header,
+    #nav-bar {
+      display: flex;
+    }
+    #header {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #header {
+      width: 100%;
+      margin: 0 auto;
+      max-width: 1150px;
+    }
+
+    nav {
+      width: 90%;
+    }
+
+    main {
+      width: 80%;
+    }
+
+  }
+
+  @media (min-width: 1025px) {
+    #header {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+  }
